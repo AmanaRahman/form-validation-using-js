@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f8fa;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #fdfdfd;
+}
+
+input:focus, textarea:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 1em;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #3e8e41;
+  transform: translateY(1px);
+}
+
+.error-message {
+  color: #e63946;
+  font-size: 0.9em;
+  margin-top: 5px;
+  display: none;
+}
+
+input.error, textarea.error {
+  border-color: #e63946;
+  box-shadow: 0 0 5px rgba(230, 57, 70, 0.4);
+}
+
+.success-message {
+  color: #2a9d8f;
+  font-weight: bold;
+  margin-top: 15px;
+  display: none;
+  font-size: 1em;
+}
+
+.success-message:before {
+  content: "✔️ ";
+}
